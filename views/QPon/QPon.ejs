@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>homepage</title>
+
+    <style>
+        #logo {
+            float: right;
+        }
+
+        #p4 {
+            clear: both;
+        }
+
+        .flex-item {
+            background-color: lightsalmon;
+            height: 50px;
+            width: 150px;
+            line-height: 50px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .flex-container {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    Hello World
+
+    <img src="https://picsum.photos/id/326/300/200.jpg" alt="Herbal tea" id="herbal" /><a href="https://picsum.photos">
+        A Link </a><span id="span1"> This is a span, also often used as a container for other HTML elements.</span>
+
+    <h3 id='bookmark'>The Bookmark</h3>
+    <br><br><br><br><br>
+    <a href="#bookmark">Jump to 'The Bookmark'</a>
+
+
+    <section>
+        <div id="logo">
+            <img id="logo-img" src="https://picsum.photos/id/326/150/150" />
+        </div>
+
+        <p id="p1">Text area 1; Text area 1; Text area 1; Text area 1;</p>
+        <p id="p2">Text area 2; Text area 2; Text area 2; Text area 2;</p>
+        <p id="p3">Text area 3; Text area 3; Text area 3; Text area 3;</p>
+        <p id="p4">Text area 4; Text area 4; Text area 4; Text area 4;</p>
+        <p id="p5">Text area 5; Text area 5; Text area 5; Text area 5;</p>
+    </section>
+
+    <section>
+        <div class="flex-container">
+            <div class="flex-item">1</div>
+            <div class="flex-item">2</div>
+            <div class="flex-item">3</div>
+            <div class="flex-item">4</div>
+        </div>
+    </section>
+
+
+    <section class="section">
+        <div class="container">
+    
+            <div class="columns">
+                <div class="column card">
+                    abc
+                </div>
+                <div class="column card">
+                    abc
+                </div>
+                <div class="column card">
+                </div>
+                <div class="column card">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="columns is-mobile is-multiline">
+        <div class="column is-half-mobile card">
+            <figure class="image is-square">
+                <img style="object-fit:cover" src="https://picsum.photos/seed/picsum1/500/500" />
+            </figure>
+        </div>
+        <div class="column is-half-mobile card">
+            <figure class="image is-3by4">
+                <img style="object-fit:cover" src="https://picsum.photos/seed/picsum5/500/1500" />
+            </figure>
+        </div>
+        <div class="column is-half-mobile card">
+            <figure class="image is-4by3">
+                <img style="object-fit:cover" src="https://picsum.photos/seed/picsum2/1500/500" />
+            </figure>
+        </div>
+        <div class="column is-half-mobile card">
+            <figure class="image is-square">
+                <img style="object-fit:cover" src="https://picsum.photos/seed/picsum4/500/500" />
+            </figure>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="buttons">
+                <button class="button is-primary" onclick="btn1Clicked(this)">
+                    I'm Button 1, Click me!
+                </button>
+                <button class="button is-warning is-light" onclick="btn2Clicked(this)">
+                    I'm Button 2, Click me!
+                </button>
+                <button class="button is-primary is-outlined" onclick="btn3Clicked()">
+                    I'm Button 3, Click me!
+                </button>
+                <button class="button is-warning is-inverted" onclick="btn4Clicked()">
+                    I'm Button 4, Click me!
+                </button>
+                <button class="button is-primary is-outlined is-rounded" onclick="btn5Clicked()">
+                    I'm Button 5, Click me!
+                </button>
+                <button class="button is-warning is-rounded" onclick="btn6Clicked()">
+                    I'm Button 6, Click me!
+                </button>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
